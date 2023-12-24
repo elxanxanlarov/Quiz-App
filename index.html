@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+
+
+  <body>
+    <!-- ! Header start -->
+    <header class="header header__container container">
+      <div class="header__left align__center opacity__0">
+        <div class="header__left__img__box center">
+          <img
+            src="./assets/images/step1__accessibility__logo.svg"
+            alt=""
+            class="header__left__img"
+          />
+        </div>
+        <p class="header__left__text">Accessibility</p>
+      </div>
+      <div class="header__theme__change__box">
+        <!-- icon sun -->
+        <label for="check" class="cursor__p">
+          <ion-icon
+            name="sunny-outline"
+            class="header__change__icon"
+          ></ion-icon>
+        </label>
+        <!-- change button -->
+        <input type="checkbox" id="check" />
+        <label
+          for="check"
+          class="header__check__label center cursor__p"
+        ></label>
+
+        <!-- icon moon -->
+        <label for="check" class="cursor__p">
+          <ion-icon name="moon-outline" class="header__change__icon"></ion-icon>
+        </label>
+
+        <!--  bg img -->
+        <div class="bg__left__img__box">
+          <img
+            src="/assets/images/bg__left__img.svg"
+            alt=""
+            class="bg__left__img bg__img"
+          />
+         
+        </div>
+        <div class="bg__right__img__box">
+          <img
+            src="/assets/images/bg__right__img.svg"
+            alt=""
+            class="bg__right__img bg__img"
+          />
+    
+        </div>
+      </div>
+    </header>
+    <!-- ! Header end -->
+    <!-- ! Step1 start -->
+    <section class="step1 container">
+      <main class="main">
+        <div class="main__left__box">
+          <p class="step1__main__left__first">Welcome to the</p>
+          <h1 class="step1__main__left__second">Frontend Quiz!</h1>
+          <p class="step1__main__left__third">Pick a subject to get started.</p>
+        </div>
+        <div class="main__right__box">
+          <ul class="main__right__content__box">
+            <li class="main__right__content align__center">
+              <img src="./assets/images/step1__html__logo.svg" alt="" />
+              <p>HTML</p>
+            </li>
+            <li class="main__right__content align__center">
+              <img src="./assets/images/step1__css__logo.svg" alt="" />
+              <p>CSS</p>
+            </li>
+            <li class="main__right__content align__center">
+              <img src="./assets/images/step1__js__logo.svg" alt="" />
+              <p>Javascript</p>
+            </li>
+            <li class="main__right__content align__center">
+              <img
+                src="./assets/images/step1__accessibility__logo.svg"
+                alt=""
+              />
+              <p>Accessibility</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </section>
+    <!-- ! Step1 end -->
+    <!-- ! Step2 start -->
+    <section class="step2 container dp__none">
+      <main class="main">
+        <!-- main left side -->
+        <div class="step2__main__left__box">
+          <p class="step2__main__left__first">Question 6 of 10</p>
+          <h2 class="step2__main__left__second">
+            Which of these color contrast ratios defines the minimum WCAG 2.1
+            Level AA requirement for normal text?
+          </h2>
+          <!-- bar side -->
+          <div class="step2__main__left__bar__box">
+            <p class="step2__main__left__bar" style="width: 20%;"></p>
+          </div>
+        </div>
+        <!-- main right side -->
+        <div class="main__right__box">
+          <form action="#"  class="main__right__button__form">
+          <ul class="right__content__box dp__column">
+            <!-- <li class="step2__main__right__content align__center" id="1">
+              <div class="main__right__content__abcd__box center">
+                <p class="main__right__content__abcd" >A</p>
+              </div>
+              <p class="main__right__content__text">4.5 : 1</p>
+            </li> -->
+          </ul>
+          <!-- main button -->
+           <div class="main__right__button__box">
+             <button class="main__right__button">Submit Answer</button>
+           </div >
+        </div>
+      </main>
+    </section>
+    <!-- ! Step2 end -->
+
+
+    
+   
+    <section class="step3  container dp__none ">
+      <main class="main">
+        <!-- main left side -->
+        <div class="main__left__box">
+          <p class="step3__main__left__first">Question 6 of 10</p>
+          <h2 class="step3__main__left__second">
+            You scored...
+          </h2>
+          <!-- bar side -->
+          
+        </div>
+        <!-- main right side -->
+        <div class="step3__right__box">
+          <form  class="step3__right__button__form">
+          <ul class="right__content__box ">
+            <li class="step3__main__right__content dp__column align__center">
+              <div class="step3__right__content__abcd__box">
+                  <div class="header__left align__center">
+                    <div class="header__left__img__box center">
+                      <img
+                        src="./assets/images/step1__accessibility__logo.svg"
+                        alt=""
+                        class="header__left__img"
+                      />
+                    </div>
+                    <p class="header__left__text">Accessibility</p>
+                  </div>
+              </div>
+              <p class="step3__right__content__second">8</p>
+              <p class="step3__right__content__third">out of 10</p>
+            </li>
+          
+          </ul>
+          <!-- main button -->
+            <button class="main__right__button">Submit Answer</button>
+          </form>
+        </div>
+      </main>
+    
+
+    </section>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
