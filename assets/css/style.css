@@ -24,9 +24,9 @@ body {
     left: 0;
     z-index: -1;
 }
-
+/* 
 .bg__img {
-}
+} */
 
 /* ! Html Bases start */
 a {
@@ -239,26 +239,24 @@ li {
     width: 100%;
     gap: 1rem;
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     background-color: var(--right-content-bg);
-    padding: 1.25rem;
+    padding: 1rem;
     cursor: pointer;
     box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     border-radius: 1.5rem;
     color: var(--text-black-color);
 }
 
-.main__right__content:hover {
-    opacity: .6;
-}
+
 
 /* ? Main  end*/
 /* ! Step1  end */
 /* ! Step2 start */
 /*? left side  */
 /* text */
-.step2__main__left__box {
-    width: 37%;
+.main__left__box {
+    width: 40%;
 }
 
 .step2__main__left__first {
@@ -276,7 +274,7 @@ li {
 /* left bar side */
 .step2__main__left__bar__box {
     width: 24.0625rem;
-    height: 1rem;
+    height: .5rem;
     background-color: var(--right-content-bg);
     margin-top: 6.8rem;
     position: relative;
@@ -285,7 +283,7 @@ li {
 }
 
 .step2__main__left__bar {
-    height: 1rem;
+    height: .5rem;
     position: absolute;
     background-color: var(--toggle-bg-color);
     border-radius: 6.5rem;
@@ -293,69 +291,66 @@ li {
 
 /* ? right side */
 .right__content__box {
-    gap: 1rem;
+    gap: .6rem;
+}
+.main__right__content.margin{
+margin-top: .5rem;
+}
+.main__right__content:hover.hover{
+opacity: .6;
 }
 
-.step2__main__right__content {
-    padding: .6rem;
-    border-radius: 1rem;
-    background-color: var(--right-content-bg);
-    display: flex;
-    gap: 1.5rem;
-    cursor: pointer;
-    position: relative;
-}
 
 /* ? content selected */
-.step2__main__right__content.selected {
+.main__right__content.selected {
     border: 2px solid var(--toggle-bg-color);
 }
 
-.step2__main__right__content.selected .main__right__content__abcd__box {
+.main__right__content.selected .main__right__content__abcd__box {
     background-color: var(--toggle-bg-color);
 }
 
-.step2__main__right__content.selected .main__right__content__abcd {
+.main__right__content.selected .main__right__content__abcd {
     color: var(--toggle-white);
 }
 
 /* ? content right answer */
-.step2__main__right__content.right {
+.main__right__content.right {
     border: 2px solid var(--green-color);
 }
 
-.step2__main__right__content.right .main__right__content__abcd__box {
+.main__right__content.right .main__right__content__abcd__box {
     background-color: var(--green-color);
 }
 
-.step2__main__right__content.right .main__right__content__abcd {
+.main__right__content.right .main__right__content__abcd {
     color: var(--toggle-white);
 }
 
-.step2__main__right__content.right::after {
+.main__right__content.right::after {
     content: '\f058';
     font-family: FontAwesome;
     position: absolute;
     right: 10%;
     color: var(--green-color);
     border-color: var(--green-color);
-    font-size: 1.4rem
+    font-size: 1.4rem;
 }
 
 /* ? content wrong answer */
-.step2__main__right__content.wrong {
+.main__right__content.wrong {
     border: 2px solid var(--red-color);
 }
 
-.step2__main__right__content.wrong .main__right__content__abcd__box {
+.main__right__content.wrong .main__right__content__abcd__box {
     background-color: var(--red-color);
 }
 
-.step2__main__right__content.wrong .main__right__content__abcd {
+.main__right__content.wrong .main__right__content__abcd {
     color: var(--toggle-white);
 }
 
-.step2__main__right__content.wrong::after {
+.main__right__content.wrong::after {
     content: '\f057';
     font-family: FontAwesome;
     position: absolute;
@@ -365,11 +360,11 @@ li {
 }
 
 /* content hover */
-.step2__main__right__content:hover .main__right__content__abcd {
+.main__right__content:hover .main__right__content__abcd {
     color: var(--toggle-bg-color)
 }
 
-.step2__main__right__content:hover .main__right__content__abcd__box {
+.main__right__content:hover .main__right__content__abcd__box {
     background-color: var(--header-left-img-bg)
 }
 
@@ -394,19 +389,19 @@ li {
 
 /* button right */
 .main__right__button {
-    width: 30rem;
-    padding: 1.2rem;
+    width: 100%;
+    padding: 1rem;
     background-color: var(--toggle-bg-color);
     color: var(--toggle-white);
     cursor: pointer;
     border-radius: 1rem;
-    margin-top: 1rem;
-    font-size: 1.4rem;
+    margin-top: .5rem;
+    font-size: 1.2rem;
 }
 
-.main__right__button:hover {
+/* .main__right__button:hover {
     opacity: .5;
-}
+} */
 
 /* ! Step2  end */
 /* ! Step3 start */

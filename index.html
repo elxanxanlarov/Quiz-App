@@ -17,15 +17,15 @@
   <body>
     <!-- ! Header start -->
     <header class="header header__container container">
-      <div class="header__left align__center opacity__0">
-        <div class="header__left__img__box center">
+      <div class="header__left align__center ">
+        <!-- <div class="header__left__img__box center">
           <img
             src="./assets/images/step1__accessibility__logo.svg"
             alt=""
             class="header__left__img"
           />
         </div>
-        <p class="header__left__text">Accessibility</p>
+        <p class="header__left__text">Accessibility</p> -->
       </div>
       <div class="header__theme__change__box">
         <!-- icon sun -->
@@ -36,7 +36,7 @@
           ></ion-icon>
         </label>
         <!-- change button -->
-        <input type="checkbox" id="check" />
+        <input type="checkbox" id="check" class="header__theme__input" />
         <label
           for="check"
           class="header__check__label center cursor__p"
@@ -76,26 +76,11 @@
           <p class="step1__main__left__third">Pick a subject to get started.</p>
         </div>
         <div class="main__right__box">
-          <ul class="main__right__content__box">
-            <li class="main__right__content align__center">
+          <ul class="right__content__box dp__column ">
+            <!-- <li class="main__right__content align__center">
               <img src="./assets/images/step1__html__logo.svg" alt="" />
               <p>HTML</p>
-            </li>
-            <li class="main__right__content align__center">
-              <img src="./assets/images/step1__css__logo.svg" alt="" />
-              <p>CSS</p>
-            </li>
-            <li class="main__right__content align__center">
-              <img src="./assets/images/step1__js__logo.svg" alt="" />
-              <p>Javascript</p>
-            </li>
-            <li class="main__right__content align__center">
-              <img
-                src="./assets/images/step1__accessibility__logo.svg"
-                alt=""
-              />
-              <p>Accessibility</p>
-            </li>
+            </li> -->
           </ul>
         </div>
       </main>
@@ -105,40 +90,34 @@
     <section class="step2 container dp__none">
       <main class="main">
         <!-- main left side -->
-        <div class="step2__main__left__box">
-          <p class="step2__main__left__first">Question 6 of 10</p>
+        <div class="main__left__box">
+          <!-- <p class="step2__main__left__first">Question 6 of 10</p>
           <h2 class="step2__main__left__second">
             Which of these color contrast ratios defines the minimum WCAG 2.1
             Level AA requirement for normal text?
           </h2>
-          <!-- bar side -->
           <div class="step2__main__left__bar__box">
             <p class="step2__main__left__bar" style="width: 20%;"></p>
-          </div>
+          </div> -->
         </div>
         <!-- main right side -->
         <div class="main__right__box">
-          <form action="#"  class="main__right__button__form">
           <ul class="right__content__box dp__column">
-            <!-- <li class="step2__main__right__content align__center" id="1">
+            <!-- <li class="main__right__content align__center" id="1">
               <div class="main__right__content__abcd__box center">
                 <p class="main__right__content__abcd" >A</p>
               </div>
               <p class="main__right__content__text">4.5 : 1</p>
             </li> -->
           </ul>
-          <!-- main button -->
+          <!-- ?main button -->
            <div class="main__right__button__box">
              <button class="main__right__button">Submit Answer</button>
-           </div >
+           </div>
         </div>
       </main>
     </section>
     <!-- ! Step2 end -->
-
-
-    
-   
     <section class="step3  container dp__none ">
       <main class="main">
         <!-- main left side -->
@@ -152,7 +131,6 @@
         </div>
         <!-- main right side -->
         <div class="step3__right__box">
-          <form  class="step3__right__button__form">
           <ul class="right__content__box ">
             <li class="step3__main__right__content dp__column align__center">
               <div class="step3__right__content__abcd__box">
@@ -173,8 +151,9 @@
           
           </ul>
           <!-- main button -->
+          <div class="main__right__button__box">
             <button class="main__right__button">Submit Answer</button>
-          </form>
+          </div>
         </div>
       </main>
     
