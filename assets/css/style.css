@@ -384,12 +384,10 @@ opacity: .6;
     font-size: 1.4rem;
     color: var(--grey-text);
 }
-
 .main__right__content__text {
     font-size: 1.35rem;
     color: var(--text-black-color)
 }
-
 /* button right */
 .main__right__button {
     width: 100%;
@@ -401,20 +399,16 @@ opacity: .6;
     margin-top: .5rem;
     font-size: 1.2rem;
 }
-
 .wrong__message__block{
 color:red;
 padding: 1rem;
-padding-right: .4rem;
+padding-right: 0;
 padding-left: 0;
+padding-bottom: 0;
 gap: .4rem;
 font-size: 1.5rem;
 margin: 0 auto;
 }
-/* .main__right__button:hover {
-    opacity: .5;
-} */
-
 /* ! Step2  end */
 /* ! Step3 start */
 /* ? left side */
@@ -422,29 +416,24 @@ margin: 0 auto;
     font-size: 4rem;
     font-weight: 300;
 }
-
 .step3__main__left__second {
     font-size: 4rem;
     font-weight: 500;
 }
-
 /* ? right side */
 .step3__right__head__box {
     display: flex;
     flex-direction: column;
 }
-
 .step3__main__right__content {
     background-color: var(--right-content-bg);
     gap: 2rem;
     padding: 1rem;
 }
-
 .step3__right__content__second {
     font-size: 7rem;
     font-weight: 700;
 }
-
 .step3__right__content__third {
     font-size: 1.7rem;
 }

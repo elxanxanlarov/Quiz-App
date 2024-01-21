@@ -11,12 +11,13 @@ let rightContent;
 // button block
 let buttonBlock;
 let wrongMessageBlock=document.querySelector('.wrong__message__block')
-
 // Answer Block
 let rightContentBox = document.querySelector('.right__content__box');
 let quizResult=0;
 let proqressBar=0;
-
+let questionQuentity;
+let questionIndex;
+// let questionLength=0;
 // ! Data
 let data = [
      {
@@ -185,7 +186,6 @@ let data = [
      }
 ]
 let params = getCurrentUrl();
-
 // ! Action Function
 function updateUrlWithParams(type,newParams) {
      let url = new URL(window.location.href);
@@ -232,11 +232,10 @@ function generateCategoryData(a) {
 }
 function generateResultPage(catID) {
      let category=data.find(item=>item.id==catID)
-     let totalQuiz=category?.questions?.length
-     
+     let totalQuiz=category?.questions?.length  
           let questionBlock = document.querySelector('.main__left__box');
           questionBlock.innerHTML = `
-          <p class="step3__main__left__first">Question 6 of 10</p>
+          <p class="step3__main__left__first">Question ${questionIndex} of ${totalQuiz}</p>
           <h2 class="step3__main__left__second">
             You scored...
           </h2>
@@ -253,12 +252,12 @@ function generateResultPage(catID) {
          <div class="header__left align__center">
            <div class="header__left__img__box center">
              <img
-               src="./assets/images/step1__accessibility__logo.svg"
+               src="${category.img}"
                alt=""
                class="header__left__img"
              />
            </div>
-           <p class="header__left__text">Accessibility</p>
+           <p class="header__left__text">${category.name}</p>
          </div>
      </div>
      <p class="step3__right__content__second">${quizResult}</p>
@@ -269,6 +268,7 @@ function generateResultPage(catID) {
      e.preventDefault();
      updateUrlWithParams('deleted')
      quizResult=0;
+     proqressBar=0;
      })
 }
 function generateHomePage(){
@@ -285,13 +285,20 @@ function generateHomePage(){
      headerLeft.innerHTML = ``
      }
 function generateQuestionPage(catID, questionID) {
-     let question = getQuestionByIDs(catID, questionID)
+     let question = getQuestionByIDs(catID, questionID);
+     let category=data.find(item=>item.id==catID)
+     let questionLength=category.questions.length
+
+     
+     questionIndex=category.questions.findIndex(item=>item.id==questionID);
+     questionIndex++
+     
      callProqressBar(catID)
      if (question) {
           generateAnswerData(question.answer)
           let questionBlock = document.querySelector('.main__left__box');
           questionBlock.innerHTML = `
-     <p class="step2__main__left__first">Question 6 of 10</p>
+     <p class="step2__main__left__first">Question ${questionIndex} of ${questionLength}</p>
      <h2 class="step2__main__left__second">
      ${question.text}
      </h2>
@@ -341,7 +348,6 @@ function callAnswerOrCategory(type) {
      })
 
 }
-
 //! Get Function
 function getCurrentUrl() {
      let urlParams = new URLSearchParams(window.location.search);
@@ -356,7 +362,6 @@ function getCurrentUrl() {
           pageName: pageName
      }
 }
-
 function getFirstQuestionIDByCategory(catID) {
      let category = data.find(item => item.id === catID);
      if (category && category.questions && category.questions.length > 0) {
@@ -383,7 +388,8 @@ function getNextQuestion(catID,currentQuestionID){
      if(currentQuestionIndex==-1||currentQuestionIndex==category.questions.length-1){
      return null;
      } 
-     
+     // questionLength++
+     // console.log(questionLength);
      return category.questions[currentQuestionIndex+1]
      
 }
@@ -417,7 +423,6 @@ answerSubmitBtn?.addEventListener('click',(e)=>{
      let rightClassElement=document.querySelector(`.main__right__content.right`)
      let nextQuestion=getNextQuestion(catID,questionData.id)
      if(!rightClassElement){ 
-     console.log(nextQuestion);
      if(selectedID){
           wrongMessageBlock.innerHTML=``
           if(selectedID==rightAnswerID){
