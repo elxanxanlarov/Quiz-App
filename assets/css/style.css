@@ -7,7 +7,9 @@
 body {
     background-color: var(--body-bg-color);
 }
-
+.no__selected{
+user-select: none;
+}
 /* ? background img */
 .bg__right__img {
     position: absolute;
@@ -120,6 +122,7 @@ li {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
 .header__left {
@@ -134,7 +137,7 @@ li {
 }
 
 .header__left__text {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     color: var(--text-black-color)
 }
 
@@ -296,7 +299,7 @@ li {
 .main__right__content.margin{
 margin-top: .5rem;
 }
-.main__right__content:hover.hover{
+.main__right__content.hover:hover{
 opacity: .6;
 }
 
@@ -331,7 +334,7 @@ opacity: .6;
     content: '\f058';
     font-family: FontAwesome;
     position: absolute;
-    right: 10%;
+    right: 11%;
     color: var(--green-color);
     border-color: var(--green-color);
     font-size: 1.4rem;
@@ -354,17 +357,17 @@ opacity: .6;
     content: '\f057';
     font-family: FontAwesome;
     position: absolute;
-    right: 10%;
+    right: 11%;
     color: var(--red-color);
     font-size: 1.4rem
 }
 
 /* content hover */
-.main__right__content:hover .main__right__content__abcd {
+.main__right__content .main__right__content__abcd {
     color: var(--toggle-bg-color)
 }
 
-.main__right__content:hover .main__right__content__abcd__box {
+.main__right__content .main__right__content__abcd__box {
     background-color: var(--header-left-img-bg)
 }
 
@@ -399,6 +402,15 @@ opacity: .6;
     font-size: 1.2rem;
 }
 
+.wrong__message__block{
+color:red;
+padding: 1rem;
+padding-right: .4rem;
+padding-left: 0;
+gap: .4rem;
+font-size: 1.5rem;
+margin: 0 auto;
+}
 /* .main__right__button:hover {
     opacity: .5;
 } */
