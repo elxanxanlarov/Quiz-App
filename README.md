@@ -3,11 +3,9 @@
 Welcome to the **Quiz App**, a simple and interactive web-based quiz game designed to test your knowledge of frontend development topics such as HTML, CSS, JavaScript, and Accessibility.
 
 ## Demo
-To see the app in action, visit the [live demo](https://elxanxanlarov.github.io/Quiz-App/).
+To see the app in action, visit the [live demo](https://quiz-app-1123.netlify.app).
 
-![Quiz App Preview](./assets/images/quiz-preview.png)
 
----
 
 ## Features
 - **Category Selection:** Choose from different categories: HTML, CSS, JavaScript, and Accessibility.
@@ -52,24 +50,6 @@ Follow these steps to run the project locally:
 - **CSS**: For styling the interface and creating a clean UI.
 - **JavaScript**: For dynamic functionality and interactivity.
 
----
-
-## Screenshots
-### 1. Home Page
-![Home Page](./assets/images/home-page.png)
-
-### 2. Quiz in Progress
-![Quiz Progress](./assets/images/quiz-progress.png)
-
-### 3. Results Page
-![Results Page](./assets/images/results-page.png)
-
----
-
-## License
-This project is licensed under the MIT License.
-
----
 
 ## Author
 **Elxan Xanlarov**  
